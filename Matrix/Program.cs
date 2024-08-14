@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-
-namespace Matrix
+﻿namespace Matrix
 {
     internal class Program
     {
@@ -22,7 +18,7 @@ namespace Matrix
             char[] characters = "0Ѭ1#$%&£ÇABΠCDΓEFG∆HIJKLMNΘOPQRSTUVΛWXYΩZ01234Υ56Σ789".ToCharArray();
 
             // Generate random X and Y positions for the columns
-            int numberOfColumns = 50;
+            int numberOfColumns = 70;
             int[] columnPositionsX = new int[numberOfColumns];
             int[] columnHeights = new int[numberOfColumns];
             int[] columnPositionsY = new int[numberOfColumns]; // New list for Y positions
@@ -66,7 +62,7 @@ namespace Matrix
 
                 // Set the cursor position and write the random character
                 Console.SetCursorPosition(randomX, randomY);
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write(randomCharacter);
 
                 // Brief pause to observe the change
@@ -82,7 +78,7 @@ namespace Matrix
                     if (y > 0 && y < height)
                     {
                         Console.SetCursorPosition(x, y - 1);
-                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.Write(characters[random.Next(characters.Length)]);
                     }
 

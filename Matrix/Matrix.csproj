@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="MatrixDigitalRain">
-      <HintPath>bin\Debug\net8.0\MatrixDigitalRain.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

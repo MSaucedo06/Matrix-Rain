@@ -15,7 +15,7 @@
             int height = Console.WindowHeight;
 
             // Create an array of characters to be used randomly
-            char[] characters = "0Ѭ1#$%&£ÇABΠCDΓEFG∆HIJKLMNΘOPQRSTUVΛWXYΩZ01234Υ56Σ789".ToCharArray();
+            char[] characters = "0Ѭ1#$%&£ÇABΠCDアンケートΓEFG∆HIアルバイJKLMNΘカステOPQR你好STUV始めましてエヅアドともうどぞよろしくおねがいしますΛWXYΩZ01234Υ56Σ789".ToCharArray();
 
             // Generate random X and Y positions for the columns
             int numberOfColumns = 70;
@@ -63,6 +63,7 @@
                 // Set the cursor position and write the random character
                 Console.SetCursorPosition(randomX, randomY);
                 Console.ForegroundColor = ConsoleColor.Green;
+                //Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.Write(randomCharacter);
 
                 // Brief pause to observe the change
